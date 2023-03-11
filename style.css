@@ -2,7 +2,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url(/Assets/banner.png);
+    background-image: url(./Assets/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #0b0328c5;
@@ -249,7 +249,7 @@ a:hover {
     height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url(/Assets/play.png);
+    background-image: url(./Assets/play.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #1b113fcb;
@@ -307,7 +307,7 @@ a:hover {
         border: none;
     }
     .border-bottom{
-        border: none;
+      
     }
 }
 
@@ -316,7 +316,7 @@ a:hover {
 #team{
     /* height: 100vh; */
     display: flex;
-    background-image: url(/Assets/teambg.png);
+    background-image: url(./Assets/teambg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #0d0529ce;
@@ -327,12 +327,15 @@ a:hover {
     padding-right: 200px;
 }
 @media (max-width: 900px){
-    .team-container{
-        padding: none;
-        padding-left: 1px;
-        padding-right: 1px;
-        margin: none;
+    #team{
+        padding: 10%;
     }
+}
+@media (max-width: 770px){
+    .team-container-box {
+            padding: 0 20% 0;
+            /* border: solid 1px red; */
+        }
 }
 .meet{
     font-size: 22px;
@@ -369,22 +372,55 @@ a:hover {
 
 #works {
     height: 100%;
+    padding-bottom: 5%;
 }
-#works .fluid-container{
-    padding: 100px;
+
+#works .container {
+    padding: 70px 140px 70px;
 }
-#works h2{
+
+#works h2 {
     letter-spacing: 1px;
     color: #413d4b;
     font-weight: 700;
     font-family: "Playfair Display";
 }
+
 #works p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #413d4b;
+    font-weight: 300;
+    font-family: "Roboto";
     text-align: right;
-    width: fit-content;
-    float: right;
-    position: relative;
-    margin-top: -3.5%;
+}
+
+@media (max-width: 775px) {
+    #works .container {
+        padding: 50px 15px 50px;
+    }
+
+    #works h2 {
+        font-size: 20px;
+    }
+
+    #works p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 775px) {
+    #works .card-container {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 575px) {
+    #works .card-container {
+        justify-content: center;
+        align-items: center;
+        width: 70vw;
+    }
 }
 
 
@@ -394,7 +430,7 @@ a:hover {
     font-size: 100px;
 }
 #testimonials{
-    background-image: linear-gradient(90deg, #09052f 0%, #3f306699 100%), url(/Assets/quotebg.png);
+    background-image: linear-gradient(90deg, #09052f 0%, #3f306699 100%), url(./Assets/quotebg.png);
     height: 500px;
     display: flex;
     align-items: center;
@@ -466,7 +502,7 @@ a:hover {
     padding: 5rem;
     display: flex;
     align-items: center;
-    background-image: url(/Assets/quotebg.png);
+    background-image: url(./Assets/quotebg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--color-bg-dark);
@@ -491,12 +527,69 @@ a:hover {
     padding: 5rem;
     display: flex;
     align-items: center;
-    background-image: url(/Assets/quotebg.png);
+    background-image: url(./Assets/quotebg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--color-bg-dark);
     background-blend-mode: overlay;
     color: var(--color-white);
+}
+@media (max-width: 1200px){
+    #peoplesay {
+            padding: 0 10px 0;
+        }
+    #peoplesay p{
+       
+        padding: 1px;
+    }
+        .people-nav img {
+            height: 50px;
+            padding: 0;
+        }
+}
+@media (max-width: 992px){
+    #peoplesay {
+            padding: 0 0px 0;
+        }
+                #peoplesay p {
+                    
+                    padding: 1px;
+                }
+        .people-nav img {
+            height: 40px;
+            padding: 0;
+        }
+}
+@media (max-width: 645px){
+    #peoplesay {
+        padding: 0 10px 0;
+    }
+    
+}
+@media (max-width: 510px){
+    
+    .people-nav img{
+        height: 50px;
+        padding: 0;
+    }
+    #peoplesay p {
+        /* border: solid 1px blue; */
+        padding: 1px;
+    }
+        .slleft,
+        .slright {
+            display: none;
+        }
+}
+@media (max-width: 380px) {
+    .people-nav img {
+            height: 50px;
+            padding: 0;
+            gap: 0;
+        }
+        .slleft, .slright{
+            display: none;
+        }
 }
 
 #peoplesay h1 {
@@ -552,7 +645,7 @@ a:hover {
 /*  */
 #footer{
     height: 400px;
-    background-image: linear-gradient(90deg, #09052f 0%, #3f306699 100%), url(/Assets/footerbg.png);
+    background-image: linear-gradient(90deg, #09052f 0%, #3f306699 100%), url(./Assets/footerbg.png);
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
