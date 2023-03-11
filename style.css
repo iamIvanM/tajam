@@ -578,3 +578,14 @@ a:hover {
         width: 30px; 
     }   
 }
+@media (max-width: 1280px) {
+    #footer {
+        padding: 10px;
+    }
+    .input-group-append {
+        display: none;
+    }
+    #footer input {
+        width: 100%;
+    }
+}
